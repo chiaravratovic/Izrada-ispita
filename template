@@ -1,0 +1,32 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[croatian]{babel}
+
+\title{Izrada ispita}
+\author{Chiara Vratović, Karlo Krapić, Luka Skitarelić}
+\date{23.1.2018}
+\institute{Tehnički fakultet}
+
+  \usetheme{Berlin}    
+  \usecolortheme{whale}
+  \usefonttheme{professionalfonts}  
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+
+
+\begin{document}
+	\frame {
+		\titlepage 
+	}
+	\frame {
+		\frametitle{}
+	}
+	\frame{
+		\frametitle{}
+	}
+	\frame{
+	  	\frametitle{}
+
+	}
+\end{document}
