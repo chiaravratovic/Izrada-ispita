@@ -20,14 +20,13 @@
 	\frame {
 		\titlepage 
 	}
-	\frame {
+	\begin{frame}
 		\frametitle{}
-	}
-	\frame{
+	\end{frame}
+	\begin{frame}
 		\frametitle{}
-	}
-	\frame{
+	\end{frame}
+	\begin{frame}
 	  	\frametitle{}
-
-	}
+	\end{frame}
 \end{document}
