@@ -20,13 +20,24 @@
 	\frame {
 		\titlepage 
 	}
-	\begin{frame}
-		\frametitle{}
-	\end{frame}
-	\begin{frame}
-		\frametitle{}
-	\end{frame}
-	\begin{frame}
-	  	\frametitle{}
-	\end{frame}
+	\begin{frame}[fragile]
+    	\frametitle{Test klasa dokumenta}
+    	\begin{itemize} 
+    		\item najjednostavniji nacin izrade ispita
+    		\item dvije dodatne opcije
+    		\item \begin{verbatim}\documentclass[addpoints][solution]{test}\end{verbatim}
+    		\item addpoints
+    				\begin{itemize} 
+    					\item omogucuje zbrajanje bodova, izradu tablica bodova i ocjena
+    					\item \begin{verbatim}\addpoints \noaddpoints\end{verbatim}
+    					\item pale i gase addpoints opciju
+    				\end{itemize}
+    		\item answers 
+    				\begin{itemize}
+    					\item omogucuje ispis rjesenja na pitanja  
+    					\item \begin{verbatim}\printanswers\end{verbatim}
+    					\item isti ucinak ako se primjeni u preambuli dokumenta
+    				\end{itemize}
+    	\end{itemize}
+    \end{frame}
 \end{document}
