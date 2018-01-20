@@ -40,4 +40,26 @@
     				\end{itemize}
     	\end{itemize}
     \end{frame}
+    \begin{frame}[fragile]
+    	\frametitle{Pitanja}
+    	\begin{itemize}
+    		\item \begin{verbatim}\begin{question}\end{question}\end{verbatim}
+    		\item enviorment u koji stavljamo pitanja
+    		\item \begin{verbatim}\question\end{verbatim}
+    		\begin{itemize}
+    			\item komanda koja zapocinje pitanje
+    			\item automatski numerira pitanja
+    		\end{itemize}
+    		\item moguce ih je vise puta podjeliti na dijelove i podpitanja 
+    	\end{itemize}
+    \end{frame}
+    \begin{frame}[fragile]
+    	\frametitle{Djelovi}
+    	\begin{itemize}
+    		\item \begin{verbatim}\begin{parts,subparts,subsubparts}\end{verbatim}
+    		\item za svaki postoji odgovarajuca komanda koja zapocinje pitanje
+    		\item \begin{itemize}\begin{verbatim}\part \subpart \subsubpart\end{verbatim}\end{itemize}
+    		\item moguce je urediti brojeve i slova pri numeriranju stranica i prikaz bodova
+    	\end{itemize}	
+    \end{frame}
 \end{document}
