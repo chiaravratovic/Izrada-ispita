@@ -138,6 +138,39 @@
     	\end{itemize}	
     \end{frame}
 
+    \begin{frame}[fragile]
+    	\frametitle{Odgovori} 
+    	\begin{itemize}
+    		\item \begin{verbatim}\vspace*{1in}\end{verbatim} 
+    		ostavi prazan nakon linije u kojoj se javlja
+    		\item \begin{verbatim}\vspace*{\stretch{1}}\end{verbatim} 
+    		podjeli prostor izmedu pitanja u odredenom omjeru
+    		\item \begin{verbatim}\newpage\end{verbatim} 
+    		upotrebom odmah nakon jedne od naredbi primjenjuje ju na cijelu stranicu
+    		\item moguce je mjenjeati boju, razmak izmedu linija, sirinu...
+    	\end{itemize}	
+    \end{frame}
+    
+    \begin{frame}[fragile] 
+    	\frametitle{Odgovori}
+    	\begin{itemize}
+    		\item \begin{verbatim}\answerline\end{verbatim}
+    			\begin{itemize}
+    				\item koristi se za kratke odgovore
+    				\item umetne prazan prostor i nakon toga liniju
+    				\item kombinacija dvije naredbe
+    			\end{itemize}
+    		\item \begin{verbatim}\setlength\answerskip{2ex}\end{verbatim}
+    			\begin{itemize}
+    				\item naredba za velicinu praznog prostora
+    			\end{itemize}
+    		\item \begin{verbatim}\setlength\answerlinelength{1in}\end{verbatim}
+    			\begin{itemize}
+    				\item naredba za duljinu linije 
+    			\end{itemize}
+    	\end{itemize}
+    \end{frame}
+
 	\begin{frame}[fragile]
 		\frametitle{Solution okruženje}
 		\begin{itemize}
