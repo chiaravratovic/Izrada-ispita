@@ -40,6 +40,7 @@
     				\end{itemize}
     	\end{itemize}
     \end{frame}
+    
     \begin{frame}[fragile]
     	\frametitle{Pitanja}
     	\begin{itemize}
@@ -53,6 +54,7 @@
     		\item moguce ih je vise puta podjeliti na dijelove i podpitanja 
     	\end{itemize}
     \end{frame}
+    
     \begin{frame}[fragile]
     	\frametitle{Djelovi}
     	\begin{itemize}
@@ -62,7 +64,8 @@
     		\item moguce je urediti brojeve i slova pri numeriranju stranica i prikaz bodova
     	\end{itemize}	
     \end{frame}
-    	\begin{frame}
+    
+    \begin{frame}
 		\frametitle{Pitanja sa više izbora}
 		Postoje četiri okruženja koja možemo koristiti za generiranje pitanja sa više izbora i sva se moraju započeti i završiti unutar question enviormenta
 			\begin{enumerate}
@@ -73,7 +76,7 @@
 			\end{enumerate}
 	\end{frame}
 	
-\begin{frame}[fragile]
+	\begin{frame}[fragile]
 		\frametitle{Primjeri choices i oneparchoices okruženja}
 		Choices okruženje koristimo kako bi ponudili više izbora odgovora koji su postavljeni jedan ispod drugog
 			\begin{itemize}
@@ -120,7 +123,22 @@
 					\end{verbatim}
 			\end{itemize}
 	\end{frame}
-		\begin{frame}[fragile]
+
+	\begin{frame}[fragile]
+    	\frametitle{Odgovori}
+    	\begin{itemize}
+    		\item Postoji pet vrsta prostora za odgovore
+    		\begin{itemize}
+    			\item prazan prostor \begin{verbatim}\vspace*{1in} ili \vspace*{\stretch{2}}\end{verbatim}
+    			\item prazan pravokutnik \begin{verbatim}\makeemptybox{1in}\end{verbatim}
+    			\item linije \begin{verbatim}\fillwithlines{1in}\end{verbatim}
+    			\item isprekidane linije \begin{verbatim}\fillwithdottedlines{1in}\end{verbatim}
+    			\item mreza \begin{verbatim}\fillwithgrid{1in}\end{verbatim}
+    		\end{itemize}
+    	\end{itemize}	
+    \end{frame}
+
+	\begin{frame}[fragile]
 		\frametitle{Solution okruženje}
 		\begin{itemize}
 		\item Postoje 6 okruženja za zapisivanje riješenja
