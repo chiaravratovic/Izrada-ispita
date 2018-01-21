@@ -62,4 +62,62 @@
     		\item moguce je urediti brojeve i slova pri numeriranju stranica i prikaz bodova
     	\end{itemize}	
     \end{frame}
+    	\begin{frame}
+		\frametitle{Pitanja sa više izbora}
+		Postoje četiri okruženja koja možemo koristiti za generiranje pitanja sa više izbora i sva se moraju započeti i završiti unutar question enviormenta
+			\begin{enumerate}
+				\item{Choices okruženje}
+				\item{Oneparchoices okruženje}
+				\item{Checkboxes okruženje}
+				\item{Oneparcheckboxes okruženje}
+			\end{enumerate}
+	\end{frame}
+	
+\begin{frame}[fragile]
+		\frametitle{Primjeri choices i oneparchoices okruženja}
+		Choices okruženje koristimo kako bi ponudili više izbora odgovora koji su postavljeni jedan ispod drugog
+			\begin{itemize}
+				\item
+					\begin{verbatim}
+					\begin{choices}
+					\choice Prvi izbor
+					\choice Drugi izbor
+					\end{choices}
+					\end{verbatim}
+			\end{itemize}
+		Oneparchoices okruženje koristimo kako bi ponudili više izbora odgovora koji su postavljeni jedan za drugim
+			\begin{itemize}
+				\item
+					\begin{verbatim}
+					\begin{oneparchoices}
+					\choice Biti
+					\choice Ne biti
+					\end{oneparchoices}
+					\end{verbatim}
+			\end{itemize}
+	\end{frame}
+
+	\begin{frame}[fragile]
+		\frametitle{Primjeri checkboxes i oneparcheckboxes okruženja}
+		Checkboxes okruženje koristimo kako bi imali više izbora koji ispred sebe imaju praznu kućicu koju popunjavamo 
+			\begin{itemize}
+				\item
+					\begin{verbatim}
+					\begin{checkboxes}
+					\choice Lijevo
+					\choice Desno
+					\end{checkboxes}
+					\end{verbatim}
+			\end{itemize}
+		Oneparcheckboxes okruženje koristimo kako bi imali više izbora koji ispred sebe imaju praznu kućicu koju popunjavamo i postavljeni su svi u jednom redu
+			\begin{itemize}
+				\item
+					\begin{verbatim}
+					\begin{oneparcheckboxes}
+					\choice Buka
+					\choice Tišina
+					\end{oneparcheckboxes}
+					\end{verbatim}
+			\end{itemize}
+	\end{frame}
 \end{document}
