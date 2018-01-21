@@ -120,4 +120,27 @@
 					\end{verbatim}
 			\end{itemize}
 	\end{frame}
+		\begin{frame}[fragile]
+		\frametitle{Solution okruženje}
+		\begin{itemize}
+		\item Postoje 6 okruženja za zapisivanje riješenja
+		\item  Zadane postavke su da se riješenja ne ispisuju pa o tome hoće li se isprintati riješenja odlučujemo sa dvije komande:
+			\begin{verbatim}
+			\printanswers i \noprintanswers 
+			\end{verbatim}
+		\item Također postoji opcija za odgovore koju mozemo dodati dokument klasi za ispite
+			\begin{verbatim}
+			\documentclass[answers]{exam}
+			\end{verbatim}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}[fragile]
+		\frametitle{Primjeri solution okruženja}
+		Postoje 2 tipa okruženja 
+		\begin{itemize}
+		\item Solutionbox okruženje koje uvijek isprinta prazan kvadrat i riješenje ako unutar kvadrata ako se riješenja printaju 
+		\item Solution, solutionorbox, solutionorlines, solutionordottedlines, solutionorgrid koji printaju riješenje ili ništa i jedina razlika među njima je količina prostora kojeg puštaju kad se 				riješenja ne printaju
+		\end{itemize}
+	\end{frame}
 \end{document}
