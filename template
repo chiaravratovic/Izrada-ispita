@@ -62,7 +62,7 @@
     		\item \begin{verbatim}\begin{parts,subparts,subsubparts}\end{verbatim}
     		\item za svaki postoji odgovarajuća naredba koja započinje pitanje
     		\item \begin{itemize}\begin{verbatim}\part \subpart \subsubpart\end{verbatim}\end{itemize}
-    		\item moguće je urediti brojeve i slova pri numeriranju stranica i prikaz bodova
+    		\item moguće je urediti izgled brojeva i slova pri numeriranju pitanja i prikazu bodova
     	\end{itemize}	
     \end{frame}
     
