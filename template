@@ -271,4 +271,72 @@ Tablice su zadane dvama parametrima koje smještamo u zagrade:
 	\end{itemize}
 \end{itemize}
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Izrada ispita na drugim jezicima}
+Exam okružje podržano je samo na engleskom jeziku, no neke zadane riječi možemo prevesti i na drugi jezik tako da ih definiramo u preambuli, primjerice:
+\begin{itemize}
+\item
+	\begin{verbatim}
+	\pointpoints{bod}{bodovi} - riječ "point" mijenja u 
+      "bod", a "points" u "bodovi"
+	\end{verbatim}
+\item
+	\begin{verbatim}
+	\bonuspointpoints{dodatni bod}{dodatni bodovi}
+	\end{verbatim}
+\item
+	\begin{verbatim}
+	\totalformat{Pitanje \thequestion: \totalpoints bodova} 
+     - prikazuje format ukupnog izgleda "Pitanje x:
+	       y bodova"
+	\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+Isto to možemo učiniti sa zadanim riječima u bodovnim tablicama. Riječi u tablicama mijenjamo ovisno o:
+\begin{enumerate}[1]
+\item \emph{položaju}
+	\begin{itemize}
+	\item h - za horizontalnu
+	\item v - za vertikalnu
+	\end{itemize}
+
+\item \emph{riječi}
+	\begin{itemize}
+	\item q - question
+	\item pg - page
+	\item p - points
+	\item s - score
+	\item t - total
+	\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{enumerate}[3]
+\item \emph{vrsti}
+	\begin{itemize}
+	\item 
+		\begin{verbatim} 
+		gradetable - (h/v) + (slovo riječi koju mijenjamo) 
+		+ word + {nova riječ}, npr. hqword{Pitanje}
+		\end{verbatim} 
+\medskip
+	\item 
+		\begin{verbatim}
+		bonusgradetable - b + (h/v) + (slovo riječi koju 
+		mijenjamo) + word + {nova riječ}, npr. bvpgword{Stranica}
+		\end{verbatim}
+\medskip	
+	\item 
+		\begin{verbatim}
+		combinedgradetable - c + (h/v) + (slovo riječi koju 
+		mijenjamo) + word + {nova riječ}, npr. chpword{Bodovi}
+		\end{verbatim}
+	\end{itemize}
+
+\end{enumerate}
+\end{frame}
 \end{document}
