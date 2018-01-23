@@ -1,0 +1,453 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[croatian]{babel}
+\usepackage{url}
+
+
+\title{Izrada ispita}
+\author{Chiara Vratović, Karlo Krapić, Luka Skitarelić}
+\date{23.1.2018}
+\institute{Tehnički fakultet}
+
+  \usetheme{Berlin}    
+  \usecolortheme{whale}
+  \usefonttheme{professionalfonts}  
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+
+
+\begin{document}
+	\frame {
+		\titlepage 
+	}
+	\begin{frame}[fragile]
+    	\frametitle{Test klasa dokumenta}
+    	\begin{itemize} 
+    		\item najjednostavniji način izrade ispita
+    		\item dvije dodatne opcije
+    		\item \begin{verbatim}\documentclass[addpoints][solution]{test}\end{verbatim}
+    		\item addpoints
+    				\begin{itemize} 
+    					\item omogućuje zbrajanje bodova, izradu tablica bodova i ocjena
+    					\item \begin{verbatim}\addpoints \noaddpoints\end{verbatim}
+    					\item pale i gase addpoints opciju
+    				\end{itemize}
+    		\item answers 
+    				\begin{itemize}
+    					\item omogućuje ispis rješenja na pitanja  
+    					\item \begin{verbatim}\printanswers\end{verbatim}
+    					\item isti učinak ako se primijeni u preambuli dokumenta
+    				\end{itemize}
+    	\end{itemize}
+    \end{frame}
+    
+    \begin{frame}[fragile]
+    	\frametitle{Pitanja}
+    	\begin{itemize}
+    		\item \begin{verbatim}\begin{question}\end{question}\end{verbatim}
+    		\item environment u koji stavljamo pitanja
+    		\item \begin{verbatim}\question\end{verbatim}
+    		\begin{itemize}
+    			\item naredba koja započinje pitanje
+    			\item automatski numerira pitanja
+    		\end{itemize}
+    		\item moguće ih je više puta podijeliti na dijelove i potpitanja 
+    	\end{itemize}
+    \end{frame}
+    
+    \begin{frame}[fragile]
+    	\frametitle{Dijelovi}
+    	\begin{itemize}
+    		\item \begin{verbatim}\begin{parts,subparts,subsubparts}\end{verbatim}
+    		\item za svaki postoji odgovarajuća naredba koja započinje pitanje
+    		\item \begin{itemize}\begin{verbatim}\part \subpart \subsubpart\end{verbatim}\end{itemize}
+    		\item moguće je urediti izgled brojeva i slova pri numeriranju pitanja i prikazu bodova
+    	\end{itemize}	
+    \end{frame}
+    
+    \begin{frame}
+		\frametitle{Pitanja s više izbora}
+		Postoje četiri okruženja koja možemo koristiti za generiranje pitanja s više izbora i sva se moraju započeti i završiti unutar question environmenta
+			\begin{enumerate}
+				\item{Choices okruženje}
+				\item{Oneparchoices okruženje}
+				\item{Checkboxes okruženje}
+				\item{Oneparcheckboxes okruženje}
+			\end{enumerate}
+	\end{frame}
+	
+	\begin{frame}[fragile]
+		\frametitle{Primjeri choices i oneparchoices okruženja}
+		Choices okruženje koristimo kako bismo ponudili više izbora odgovora koji su postavljeni jedan ispod drugog
+			\begin{itemize}
+				\item
+					\begin{verbatim}
+					\begin{choices}
+					\choice Prvi izbor
+					\choice Drugi izbor
+					\end{choices}
+					\end{verbatim}
+			\end{itemize}
+		Oneparchoices okruženje koristimo kako bismo ponudili više izbora odgovora koji su postavljeni jedan za drugim
+			\begin{itemize}
+				\item
+					\begin{verbatim}
+					\begin{oneparchoices}
+					\choice Biti
+					\choice Ne biti
+					\end{oneparchoices}
+					\end{verbatim}
+			\end{itemize}
+	\end{frame}
+
+	\begin{frame}[fragile]
+		\frametitle{Primjeri checkboxes i oneparcheckboxes okruženja}
+		Checkboxes okruženje koristimo kako bismo imali više izbora koji ispred sebe imaju praznu kućicu koju popunjavamo 
+			\begin{itemize}
+				\item
+					\begin{verbatim}
+					\begin{checkboxes}
+					\choice Lijevo
+					\choice Desno
+					\end{checkboxes}
+					\end{verbatim}
+			\end{itemize}
+		Oneparcheckboxes okruženje koristimo kako bismo imali više izbora koji ispred sebe imaju praznu kućicu koju popunjavamo i postavljeni su svi u jednom redu
+			\begin{itemize}
+				\item
+					\begin{verbatim}
+					\begin{oneparcheckboxes}
+					\choice Buka
+					\choice Tišina
+					\end{oneparcheckboxes}
+					\end{verbatim}
+			\end{itemize}
+	\end{frame}
+
+	\begin{frame}[fragile]
+    	\frametitle{Odgovori}
+    	\begin{itemize}
+    		\item Postoji pet vrsta prostora za odgovore
+    		\begin{itemize}
+    			\item prazan prostor \begin{verbatim}\vspace*{1in} ili \vspace*{\stretch{2}}\end{verbatim}
+    			\item prazan pravokutnik \begin{verbatim}\makeemptybox{1in}\end{verbatim}
+    			\item linije \begin{verbatim}\fillwithlines{1in}\end{verbatim}
+    			\item isprekidane linije \begin{verbatim}\fillwithdottedlines{1in}\end{verbatim}
+    			\item mreža \begin{verbatim}\fillwithgrid{1in}\end{verbatim}
+    		\end{itemize}
+    	\end{itemize}	
+    \end{frame}
+
+    \begin{frame}[fragile]
+    	\frametitle{Odgovori} 
+    	\begin{itemize}
+    		\item \begin{verbatim}\vspace*{1in}\end{verbatim} 
+    		ostavi prazan prostor nakon linije u kojoj se javlja
+    		\item \begin{verbatim}\vspace*{\stretch{1}}\end{verbatim} 
+    		podijeli prostor između pitanja u određenom omjeru
+    		\item \begin{verbatim}\newpage\end{verbatim} 
+    		upotrebom odmah nakon jedne od naredbi primjenjuje ju na cijelu stranicu
+    		\item moguće je mijenjati boju, razmak između linija, širinu...
+    	\end{itemize}	
+    \end{frame}
+    
+    \begin{frame}[fragile] 
+    	\frametitle{Odgovori}
+    	\begin{itemize}
+    		\item \begin{verbatim}\answerline\end{verbatim}
+    			\begin{itemize}
+    				\item koristi se za kratke odgovore
+    				\item umetne prazan prostor i nakon toga liniju
+    				\item kombinacija dviju naredbi
+    			\end{itemize}
+    		\item \begin{verbatim}\setlength\answerskip{2ex}\end{verbatim}
+    			\begin{itemize}
+    				\item naredba za veličinu praznog prostora
+    			\end{itemize}
+    		\item \begin{verbatim}\setlength\answerlinelength{1in}\end{verbatim}
+    			\begin{itemize}
+    				\item naredba za duljinu linije 
+    			\end{itemize}
+    	\end{itemize}
+    \end{frame}
+
+	\begin{frame}[fragile]
+		\frametitle{Solution okruženje}
+		\begin{itemize}
+		\item Postoji 6 okruženja za zapisivanje rješenja
+		\item  Zadane postavke su da se rješenja ne ispisuju pa o tome hoće li se isprintati rješenja odlučujemo s dvije naredbe:
+			\begin{verbatim}
+			\printanswers i \noprintanswers 
+			\end{verbatim}
+		\item Također postoji opcija za odgovore koju možemo dodati dokument klasi za ispite
+			\begin{verbatim}
+			\documentclass[answers]{exam}
+			\end{verbatim}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}[fragile]
+		\frametitle{Primjeri solution okruženja}
+		Postoje 2 tipa okruženja 
+		\begin{itemize}
+		\item Solutionbox okruženje koje uvijek isprinta prazan kvadrat i rješenje unutar kvadrata ako se rješenja printaju 
+		\item Solution, solutionorbox, solutionorlines, solutionordottedlines, solutionorgrid koji printaju rješenje ili ništa i jedina razlika među njima je količina prostora kojeg puštaju kad se 				rješenja ne printaju
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}[fragile]
+\frametitle{Bodovanje}
+\emph{Broj bodova} za pojedini zadatak ispisujemo pored pitanja ili potpitanja u uglatim zagradama (u questions i parts okruženjima):
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\question[2] Što je Latex?
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\question Zadana je matrica.
+			\part[2] Izračunaj njenu determinantu.
+			\part[3] Izračunaj njen inverz.
+		\end{verbatim}
+\end{itemize}
+No, broj bodova ne mora uvijek biti cjelobrojni, možemo dodavati i polubodove tako da u opcije klase dokumenta uvedemo addpoints opciju, a polubodove definiramo naredbom 'half':
+\begin{itemize}
+	\item 
+		\begin{verbatim}
+		\documentclass[addpoints]{exam}
+		...
+		\question[2 \half] Riješi jednadžbu.
+		\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Bodovne tablice}
+Razlikujemo \emph{3 tipa bodovnih tablica}:
+\begin{itemize}
+\item 
+    \begin{verbatim}
+	\gradetable[][] - ispisuje bodovnu tablicu za svako 
+				  pitanje (bonus pitanja nisu uključena)
+    \end{verbatim} 
+\item 
+    \begin{verbatim}
+	\bonusgradetable[][] - ispisuje bodovnu tablicu samo 
+					   za bonus pitanja
+    \end{verbatim}
+\item 
+    \begin{verbatim}
+	\combinedgradetable[][] - ispisuje bodovnu tablicu sa 
+						  svim vrstama pitanja
+    \end{verbatim}
+\end{itemize}
+\end{frame}	
+
+\begin{frame}[fragile]
+Tablice su zadane dvama parametrima koje smještamo u zagrade:
+\begin{itemize}
+\item prvim parametrom određujemo \emph{položaj tablice}:
+	\begin{itemize}
+	\item 
+	\begin{verbatim}
+	[h] - za horizontalnu tablicu
+	\end{verbatim}
+	\item 
+	\begin{verbatim}
+	[v] - za vertikalnu tablicu
+	\end{verbatim}
+	\end{itemize}
+
+\item drugim parametrom određujemo \emph{kriterij ispisa bodova}:
+	\begin{itemize}
+	\item
+		\begin{verbatim}
+		[questions] - ispis bodova po pitanjima
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		[pages] - ispis bodova po stranicama
+		\end{verbatim} 
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Izrada ispita na drugim jezicima}
+Exam okružje podržano je samo na engleskom jeziku, no neke zadane riječi možemo prevesti i na drugi jezik tako da ih definiramo u preambuli, primjerice:
+\begin{itemize}
+\item
+	\begin{verbatim}
+	\pointpoints{bod}{bodovi} - riječ "point" mijenja u 
+      "bod", a "points" u "bodovi"
+	\end{verbatim}
+\item
+	\begin{verbatim}
+	\bonuspointpoints{dodatni bod}{dodatni bodovi}
+	\end{verbatim}
+\item
+	\begin{verbatim}
+	\totalformat{Pitanje \thequestion: \totalpoints bodova} 
+     - prikazuje format ukupnog izgleda "Pitanje x:
+	       y bodova"
+	\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+Isto to možemo učiniti sa zadanim riječima u bodovnim tablicama. Riječi u tablicama mijenjamo ovisno o:
+\begin{enumerate}[1]
+\item \emph{položaju}
+	\begin{itemize}
+	\item h - za horizontalnu
+	\item v - za vertikalnu
+	\end{itemize}
+
+\item \emph{riječi}
+	\begin{itemize}
+	\item q - question
+	\item pg - page
+	\item p - points
+	\item s - score
+	\item t - total
+	\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{enumerate}[3]
+\item \emph{vrsti}
+	\begin{itemize}
+	\item 
+		\begin{verbatim} 
+		gradetable - (h/v) + (slovo riječi koju mijenjamo) 
+		+ word + {nova riječ}, npr. hqword{Pitanje}
+		\end{verbatim} 
+\medskip
+	\item 
+		\begin{verbatim}
+		bonusgradetable - b + (h/v) + (slovo riječi koju 
+		mijenjamo) + word + {nova riječ}, npr. bvpgword{Stranica}
+		\end{verbatim}
+\medskip	
+	\item 
+		\begin{verbatim}
+		combinedgradetable - c + (h/v) + (slovo riječi koju 
+		mijenjamo) + word + {nova riječ}, npr. chpword{Bodovi}
+		\end{verbatim}
+	\end{itemize}
+
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Mathexam paket}
+Ispit u Latexu možemo napraviti i na drugi način - korištenjem \emph{mathexam paketa}:
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\documentclass[11pt]{article}
+		\usepackage{mathexam}
+		\end{verbatim}
+	\item
+		mathexam paket automatski generira zaglavlja i podnožja za svaku stranicu osim ako ne definiramo drugačije pomoću \begin{verbatim} \usepackage[nohdr]{mathexam} \end{verbatim} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Odgovori}
+U mathexam paketu postoje razne naredbe za zapis odgovora i definiranja prostora za odgovor:
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\answer - umetne prostor i horizontalnu 
+	          liniju za odgovor
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\addanswer - umetne samo liniju za odgovor, ne i 
+		             prostor
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\(add)answer[veličina praznog prostora za odgovor, 
+		             npr. 1cm ili 1in plus 1fill] - 
+		             određuje točno koliko prostora treba 
+		             pustiti za odgovor, inače je automatski
+		\end{verbatim}
+	\item	
+		\begin{verbatim}
+		\(add)answer*{$f'(x) =$} ili \(add)answer*{Odgovor:} - 
+		     u zagrade stavljamo ono što želimo da piše umjesto 
+		     'answer'
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\noanswer - samo horizontalna crta
+		\end{verbatim}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Zaglavlje}
+Specifikacije koje se pišu u preambuli a definiraju \emph{zaglavlje} svake stranice ispita:
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\ExamName{Završni ispit}
+		\end{verbatim}
+	\item
+		\begin{verbatim}	
+		\ExamClass{Calculus III}
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\ExamHead{\today}
+		\end{verbatim}
+\end{itemize}
+
+Uz njih, u dokumentu možemo definirati i liniju za upis imena učenika te neke osnovne upute za pisanje testa:
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\ExamNameLine
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\ExamInstrBox{Ovdje upisujemo osnovne upute.}
+		\end{verbatim}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Literatura}
+\bibliographystyle{IEEEtr}
+
+\begin{thebibliography}{9}
+\beamertemplatetextbibitems
+\bibitem{hirschhorn}
+    Philip Hirschhorn,
+    \textit{Using the exam document class},
+    Department of Mathematics
+    Wellesley College, Wellesley,
+    2017.
+\bibitem{wikilink}
+    Latex wiki. [Online] Dostupno na:
+    https://en.wikibooks.org/wiki/LaTeX/Teacher%27s_Corner
+\bibitem{hlavacek}
+    Jan Hlavacek,
+    \textit{The mathexam Package},
+    2007.
+\bibitem{sharelatexlink}
+    Sharelatex tutorial. [Online] Dostupno na:
+    \begin{verbatim}
+https://www.sharelatex.com/learn/Typing_exams_in_LaTeX    
+    \end{verbatim}
+
+\end{thebibliography}
+    
+\end{frame}
+\end{document}
