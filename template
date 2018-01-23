@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[croatian]{babel}
+\usepackage{url}
 
 
 \title{Izrada ispita}
@@ -419,5 +420,34 @@ Uz njih, u dokumentu možemo definirati i liniju za upis imena učenika te neke 
 		\end{verbatim}
 \end{itemize}
 
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Literatura}
+\bibliographystyle{IEEEtr}
+
+\begin{thebibliography}{9}
+\beamertemplatetextbibitems
+\bibitem{hirschhorn}
+    Philip Hirschhorn,
+    \textit{Using the exam document class},
+    Department of Mathematics
+    Wellesley College, Wellesley,
+    2017.
+\bibitem{wikilink}
+    Latex wiki. [Online] Dostupno na:
+    https://en.wikibooks.org/wiki/LaTeX/Teacher%27s_Corner
+\bibitem{hlavacek}
+    Jan Hlavacek,
+    \textit{The mathexam Package},
+    2007.
+\bibitem{sharelatexlink}
+    Sharelatex tutorial. [Online] Dostupno na:
+    \begin{verbatim}
+https://www.sharelatex.com/learn/Typing_exams_in_LaTeX    
+    \end{verbatim}
+
+\end{thebibliography}
+    
 \end{frame}
 \end{document}
