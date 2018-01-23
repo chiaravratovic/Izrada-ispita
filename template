@@ -23,20 +23,20 @@
 	\begin{frame}[fragile]
     	\frametitle{Test klasa dokumenta}
     	\begin{itemize} 
-    		\item najjednostavniji nacin izrade ispita
+    		\item najjednostavniji način izrade ispita
     		\item dvije dodatne opcije
     		\item \begin{verbatim}\documentclass[addpoints][solution]{test}\end{verbatim}
     		\item addpoints
     				\begin{itemize} 
-    					\item omogucuje zbrajanje bodova, izradu tablica bodova i ocjena
+    					\item omogućuje zbrajanje bodova, izradu tablica bodova i ocjena
     					\item \begin{verbatim}\addpoints \noaddpoints\end{verbatim}
     					\item pale i gase addpoints opciju
     				\end{itemize}
     		\item answers 
     				\begin{itemize}
-    					\item omogucuje ispis rjesenja na pitanja  
+    					\item omogućuje ispis rješenja na pitanja  
     					\item \begin{verbatim}\printanswers\end{verbatim}
-    					\item isti ucinak ako se primjeni u preambuli dokumenta
+    					\item isti učinak ako se primijeni u preambuli dokumenta
     				\end{itemize}
     	\end{itemize}
     \end{frame}
@@ -45,29 +45,29 @@
     	\frametitle{Pitanja}
     	\begin{itemize}
     		\item \begin{verbatim}\begin{question}\end{question}\end{verbatim}
-    		\item enviorment u koji stavljamo pitanja
+    		\item environment u koji stavljamo pitanja
     		\item \begin{verbatim}\question\end{verbatim}
     		\begin{itemize}
-    			\item komanda koja zapocinje pitanje
+    			\item naredba koja započinje pitanje
     			\item automatski numerira pitanja
     		\end{itemize}
-    		\item moguce ih je vise puta podjeliti na dijelove i podpitanja 
+    		\item moguće ih je više puta podijeliti na dijelove i potpitanja 
     	\end{itemize}
     \end{frame}
     
     \begin{frame}[fragile]
-    	\frametitle{Djelovi}
+    	\frametitle{Dijelovi}
     	\begin{itemize}
     		\item \begin{verbatim}\begin{parts,subparts,subsubparts}\end{verbatim}
-    		\item za svaki postoji odgovarajuca komanda koja zapocinje pitanje
+    		\item za svaki postoji odgovarajuća naredba koja započinje pitanje
     		\item \begin{itemize}\begin{verbatim}\part \subpart \subsubpart\end{verbatim}\end{itemize}
-    		\item moguce je urediti brojeve i slova pri numeriranju stranica i prikaz bodova
+    		\item moguće je urediti brojeve i slova pri numeriranju stranica i prikaz bodova
     	\end{itemize}	
     \end{frame}
     
     \begin{frame}
-		\frametitle{Pitanja sa više izbora}
-		Postoje četiri okruženja koja možemo koristiti za generiranje pitanja sa više izbora i sva se moraju započeti i završiti unutar question enviormenta
+		\frametitle{Pitanja s više izbora}
+		Postoje četiri okruženja koja možemo koristiti za generiranje pitanja s više izbora i sva se moraju započeti i završiti unutar question environmenta
 			\begin{enumerate}
 				\item{Choices okruženje}
 				\item{Oneparchoices okruženje}
@@ -78,7 +78,7 @@
 	
 	\begin{frame}[fragile]
 		\frametitle{Primjeri choices i oneparchoices okruženja}
-		Choices okruženje koristimo kako bi ponudili više izbora odgovora koji su postavljeni jedan ispod drugog
+		Choices okruženje koristimo kako bismo ponudili više izbora odgovora koji su postavljeni jedan ispod drugog
 			\begin{itemize}
 				\item
 					\begin{verbatim}
@@ -88,7 +88,7 @@
 					\end{choices}
 					\end{verbatim}
 			\end{itemize}
-		Oneparchoices okruženje koristimo kako bi ponudili više izbora odgovora koji su postavljeni jedan za drugim
+		Oneparchoices okruženje koristimo kako bismo ponudili više izbora odgovora koji su postavljeni jedan za drugim
 			\begin{itemize}
 				\item
 					\begin{verbatim}
@@ -102,7 +102,7 @@
 
 	\begin{frame}[fragile]
 		\frametitle{Primjeri checkboxes i oneparcheckboxes okruženja}
-		Checkboxes okruženje koristimo kako bi imali više izbora koji ispred sebe imaju praznu kućicu koju popunjavamo 
+		Checkboxes okruženje koristimo kako bismo imali više izbora koji ispred sebe imaju praznu kućicu koju popunjavamo 
 			\begin{itemize}
 				\item
 					\begin{verbatim}
@@ -112,7 +112,7 @@
 					\end{checkboxes}
 					\end{verbatim}
 			\end{itemize}
-		Oneparcheckboxes okruženje koristimo kako bi imali više izbora koji ispred sebe imaju praznu kućicu koju popunjavamo i postavljeni su svi u jednom redu
+		Oneparcheckboxes okruženje koristimo kako bismo imali više izbora koji ispred sebe imaju praznu kućicu koju popunjavamo i postavljeni su svi u jednom redu
 			\begin{itemize}
 				\item
 					\begin{verbatim}
@@ -133,7 +133,7 @@
     			\item prazan pravokutnik \begin{verbatim}\makeemptybox{1in}\end{verbatim}
     			\item linije \begin{verbatim}\fillwithlines{1in}\end{verbatim}
     			\item isprekidane linije \begin{verbatim}\fillwithdottedlines{1in}\end{verbatim}
-    			\item mreza \begin{verbatim}\fillwithgrid{1in}\end{verbatim}
+    			\item mreža \begin{verbatim}\fillwithgrid{1in}\end{verbatim}
     		\end{itemize}
     	\end{itemize}	
     \end{frame}
@@ -142,12 +142,12 @@
     	\frametitle{Odgovori} 
     	\begin{itemize}
     		\item \begin{verbatim}\vspace*{1in}\end{verbatim} 
-    		ostavi prazan nakon linije u kojoj se javlja
+    		ostavi prazan prostor nakon linije u kojoj se javlja
     		\item \begin{verbatim}\vspace*{\stretch{1}}\end{verbatim} 
-    		podjeli prostor izmedu pitanja u odredenom omjeru
+    		podijeli prostor između pitanja u određenom omjeru
     		\item \begin{verbatim}\newpage\end{verbatim} 
     		upotrebom odmah nakon jedne od naredbi primjenjuje ju na cijelu stranicu
-    		\item moguce je mjenjeati boju, razmak izmedu linija, sirinu...
+    		\item moguce je mijenjati boju, razmak između linija, širinu...
     	\end{itemize}	
     \end{frame}
     
@@ -158,11 +158,11 @@
     			\begin{itemize}
     				\item koristi se za kratke odgovore
     				\item umetne prazan prostor i nakon toga liniju
-    				\item kombinacija dvije naredbe
+    				\item kombinacija dviju naredbi
     			\end{itemize}
     		\item \begin{verbatim}\setlength\answerskip{2ex}\end{verbatim}
     			\begin{itemize}
-    				\item naredba za velicinu praznog prostora
+    				\item naredba za veličinu praznog prostora
     			\end{itemize}
     		\item \begin{verbatim}\setlength\answerlinelength{1in}\end{verbatim}
     			\begin{itemize}
@@ -174,12 +174,12 @@
 	\begin{frame}[fragile]
 		\frametitle{Solution okruženje}
 		\begin{itemize}
-		\item Postoje 6 okruženja za zapisivanje riješenja
-		\item  Zadane postavke su da se riješenja ne ispisuju pa o tome hoće li se isprintati riješenja odlučujemo sa dvije komande:
+		\item Postoji 6 okruženja za zapisivanje rješenja
+		\item  Zadane postavke su da se rješenja ne ispisuju pa o tome hoće li se isprintati rješenja odlučujemo s dvije naredbe:
 			\begin{verbatim}
 			\printanswers i \noprintanswers 
 			\end{verbatim}
-		\item Također postoji opcija za odgovore koju mozemo dodati dokument klasi za ispite
+		\item Također postoji opcija za odgovore koju možemo dodati dokument klasi za ispite
 			\begin{verbatim}
 			\documentclass[answers]{exam}
 			\end{verbatim}
@@ -190,8 +190,8 @@
 		\frametitle{Primjeri solution okruženja}
 		Postoje 2 tipa okruženja 
 		\begin{itemize}
-		\item Solutionbox okruženje koje uvijek isprinta prazan kvadrat i riješenje ako unutar kvadrata ako se riješenja printaju 
-		\item Solution, solutionorbox, solutionorlines, solutionordottedlines, solutionorgrid koji printaju riješenje ili ništa i jedina razlika među njima je količina prostora kojeg puštaju kad se 				riješenja ne printaju
+		\item Solutionbox okruženje koje uvijek isprinta prazan kvadrat i rješenje unutar kvadrata ako se rješenja printaju 
+		\item Solution, solutionorbox, solutionorlines, solutionordottedlines, solutionorgrid koji printaju rješenje ili ništa i jedina razlika među njima je količina prostora kojeg puštaju kad se 				rješenja ne printaju
 		\end{itemize}
 	\end{frame}
 	
