@@ -388,4 +388,36 @@ U mathexam paketu postoje razne naredbe za zapis odgovora i definiranja prostora
 \end{itemize}
 
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Zaglavlje}
+Specifikacije koje se pišu u preambuli a definiraju \emph{zaglavlje} svake stranice ispita:
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\ExamName{Završni ispit}
+		\end{verbatim}
+	\item
+		\begin{verbatim}	
+		\ExamClass{Calculus III}
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\ExamHead{\today}
+		\end{verbatim}
+\end{itemize}
+
+Uz njih, u dokumentu možemo definirati i liniju za upis imena učenika te neke osnovne upute za pisanje testa:
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\ExamNameLine
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\ExamInstrBox{Ovdje upisujemo osnovne upute.}
+		\end{verbatim}
+\end{itemize}
+
+\end{frame}
 \end{document}
