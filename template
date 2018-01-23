@@ -147,7 +147,7 @@
     		podijeli prostor između pitanja u određenom omjeru
     		\item \begin{verbatim}\newpage\end{verbatim} 
     		upotrebom odmah nakon jedne od naredbi primjenjuje ju na cijelu stranicu
-    		\item moguce je mijenjati boju, razmak između linija, širinu...
+    		\item moguće je mijenjati boju, razmak između linija, širinu...
     	\end{itemize}	
     \end{frame}
     
@@ -197,7 +197,7 @@
 	
 	\begin{frame}[fragile]
 \frametitle{Bodovanje}
-\emph{Broj bodova} za pojedini zadatak ispisujemo pored pitanja ili podpitanja u uglatim zagradama (u questions i parts okruženjima):
+\emph{Broj bodova} za pojedini zadatak ispisujemo pored pitanja ili potpitanja u uglatim zagradama (u questions i parts okruženjima):
 \begin{itemize}
 	\item
 		\begin{verbatim}
