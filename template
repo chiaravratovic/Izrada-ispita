@@ -194,4 +194,30 @@
 		\item Solution, solutionorbox, solutionorlines, solutionordottedlines, solutionorgrid koji printaju riješenje ili ništa i jedina razlika među njima je količina prostora kojeg puštaju kad se 				riješenja ne printaju
 		\end{itemize}
 	\end{frame}
+	
+	\begin{frame}[fragile]
+\frametitle{Bodovanje}
+\emph{Broj bodova} za pojedini zadatak ispisujemo pored pitanja ili podpitanja u uglatim zagradama (u questions i parts okruženjima):
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\question[2] Što je Latex?
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\question Zadana je matrica.
+			\part[2] Izračunaj njenu determinantu.
+			\part[3] Izračunaj njen inverz.
+		\end{verbatim}
+\end{itemize}
+No, broj bodova ne mora uvijek biti cjelobrojni, možemo dodavati i polubodove tako da u opcije klase dokumenta uvedemo addpoints opciju, a polubodove definiramo naredbom 'half':
+\begin{itemize}
+	\item 
+		\begin{verbatim}
+		\documentclass[addpoints]{exam}
+		...
+		\question[2 \half] Riješi jednadžbu.
+		\end{verbatim}
+\end{itemize}
+\end{frame}
 \end{document}
