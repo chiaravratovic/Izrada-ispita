@@ -353,4 +353,39 @@ Ispit u Latexu možemo napraviti i na drugi način - korištenjem \emph{mathexam
 		mathexam paket automatski generira zaglavlja i podnožja za svaku stranicu osim ako ne definiramo drugačije pomoću \begin{verbatim} \usepackage[nohdr]{mathexam} \end{verbatim} 
 \end{itemize}
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Odgovori}
+U mathexam paketu postoje razne naredbe za zapis odgovora i definiranja prostora za odgovor:
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\answer - umetne prostor i horizontalnu 
+	          liniju za odgovor
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\addanswer - umetne samo liniju za odgovor, ne i 
+		             prostor
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\(add)answer[veličina praznog prostora za odgovor, 
+		             npr. 1cm ili 1in plus 1fill] - 
+		             određuje točno koliko prostora treba 
+		             pustiti za odgovor, inače je automatski
+		\end{verbatim}
+	\item	
+		\begin{verbatim}
+		\(add)answer*{$f'(x) =$} ili \(add)answer*{Odgovor:} - 
+		     u zagrade stavljamo ono što želimo da piše umjesto 
+		     'answer'
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		\noanswer - samo horizontalna crta
+		\end{verbatim}
+\end{itemize}
+
+\end{frame}
 \end{document}
