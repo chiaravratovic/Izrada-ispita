@@ -339,4 +339,18 @@ Isto to možemo učiniti sa zadanim riječima u bodovnim tablicama. Riječi u ta
 
 \end{enumerate}
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Mathexam paket}
+Ispit u Latexu možemo napraviti i na drugi način - korištenjem \emph{mathexam paketa}:
+\begin{itemize}
+	\item
+		\begin{verbatim}
+		\documentclass[11pt]{article}
+		\usepackage{mathexam}
+		\end{verbatim}
+	\item
+		mathexam paket automatski generira zaglavlja i podnožja za svaku stranicu osim ako ne definiramo drugačije pomoću \begin{verbatim} \usepackage[nohdr]{mathexam} \end{verbatim} 
+\end{itemize}
+\end{frame}
 \end{document}
