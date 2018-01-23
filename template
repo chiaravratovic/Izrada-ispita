@@ -220,4 +220,55 @@ No, broj bodova ne mora uvijek biti cjelobrojni, možemo dodavati i polubodove t
 		\end{verbatim}
 \end{itemize}
 \end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Bodovne tablice}
+Razlikujemo \emph{3 tipa bodovnih tablica}:
+\begin{itemize}
+\item 
+    \begin{verbatim}
+	\gradetable[][] - ispisuje bodovnu tablicu za svako 
+				  pitanje (bonus pitanja nisu uključena)
+    \end{verbatim} 
+\item 
+    \begin{verbatim}
+	\bonusgradetable[][] - ispisuje bodovnu tablicu samo 
+					   za bonus pitanja
+    \end{verbatim}
+\item 
+    \begin{verbatim}
+	\combinedgradetable[][] - ispisuje bodovnu tablicu sa 
+						  svim vrstama pitanja
+    \end{verbatim}
+\end{itemize}
+\end{frame}	
+
+\begin{frame}[fragile]
+Tablice su zadane dvama parametrima koje smještamo u zagrade:
+\begin{itemize}
+\item prvim parametrom određujemo \emph{položaj tablice}:
+	\begin{itemize}
+	\item 
+	\begin{verbatim}
+	[h] - za horizontalnu tablicu
+	\end{verbatim}
+	\item 
+	\begin{verbatim}
+	[v] - za vertikalnu tablicu
+	\end{verbatim}
+	\end{itemize}
+
+\item drugim parametrom određujemo \emph{kriterij ispisa bodova}:
+	\begin{itemize}
+	\item
+		\begin{verbatim}
+		[questions] - ispis bodova po pitanjima
+		\end{verbatim}
+	\item
+		\begin{verbatim}
+		[pages] - ispis bodova po stranicama
+		\end{verbatim} 
+	\end{itemize}
+\end{itemize}
+\end{frame}
 \end{document}
